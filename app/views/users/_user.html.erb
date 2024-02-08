@@ -1,0 +1,14 @@
+<div id="<%= dom_id user %>">
+  <p>
+    <strong>Name:</strong>
+    <%= user.name %>
+  </p>
+
+  <p>
+    <strong>Images:</strong>
+    <% user.images.each do |image| %>
+      <div><%= link_to image.filename, image %></div>
+    <% end %>
+  </p>
+
+</div>
